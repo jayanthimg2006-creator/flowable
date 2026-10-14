@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-scale: 1rem;
+  }
+  
+  html.text-normal {
+    font-size: 16px;
+  }
+  html.text-large {
+    font-size: 18px;
+  }
+  html.text-xlarge {
+    font-size: 21px;
+  }
+
+  /* High Contrast Mode for accessibility */
+  html.high-contrast {
+    filter: contrast(135%);
+  }
+
+  html.high-contrast body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Accessible focus indicators for keyboard navigation */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 3px solid #2563eb !important;
+    outline-offset: 3px !important;
+  }
+}
+
+/* Custom accessibility scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

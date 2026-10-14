@@ -1,0 +1,17 @@
+[
+  "tests/test_ask_pipeline.py::test_ask_empty_question",
+  "tests/test_ask_pipeline.py::test_ask_end_to_end_success",
+  "tests/test_ask_pipeline.py::test_ask_graceful_when_unconfigured",
+  "tests/test_frontend_serve.py::test_serve_root_frontend",
+  "tests/test_frontend_serve.py::test_serve_spa_client_routes",
+  "tests/test_health.py::test_activity_logger",
+  "tests/test_health.py::test_health_endpoint",
+  "tests/test_health.py::test_status_endpoint",
+  "tests/test_lyzr_agent.py::test_accessible_prompt_grounding",
+  "tests/test_lyzr_agent.py::test_action_item_extraction",
+  "tests/test_lyzr_agent.py::test_lyzr_ask_success",
+  "tests/test_omi_webhooks.py::test_omi_conversation_webhook_malformed",
+  "tests/test_omi_webhooks.py::test_omi_conversation_webhook_success",
+  "tests/test_omi_webhooks.py::test_omi_realtime_webhook",
+  "tests/test_omi_webhooks.py::test_parse_omi_conversation_payload"
+]
